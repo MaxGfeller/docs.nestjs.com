@@ -87,7 +87,7 @@ In this case, even if any class depends on `ConfigService`, Nest will inject an 
 
 #### Use factory
 
-The `useFactory` is a way of creating providers **dynamically**. The actual provider will be equal to a returned value of the factory function. The factory function can either depend on several different providers or stay completely independent. It means that factory may accept arguments, that Nest will resolve and pass during the instantiation process. Additionally, this function can return value **asynchronously**. It's explained in more detail here. Use it when your provider has to be dynamically calculated or in case to resolve an asynchronous operation.
+The `useFactory` is a way of creating providers **dynamically**. The actual provider will be equal to a returned value of the factory function. The factory function can either depend on several different providers or stay completely independent. It means that factory may accept arguments, that Nest will resolve and pass during the instantiation process. Additionally, this function can return value **asynchronously**. It's explained in more detail [here](/fundamentals/async-providers). Use it when your provider has to be dynamically calculated or in case to resolve an asynchronous operation.
 
 ```typescript
 @@filename()
